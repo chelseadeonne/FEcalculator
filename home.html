@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="function.js"></script>
+</head>
+<body>
+	<div class="calculator">
+		<div class="input-display">
+			<input id="display" type="output" value="" placeholder="ready"readonly>
+		</div>
+		<div class="operators">
+			<button class="hidden"></button>
+			<button class="hidden"></button>
+			<button type="button" id="cl" onclick="clear1()">CL</button>
+			<button type="button" class="operator" onclick="reset()">Reset</button>
+			
+		</div>
+		<div class="numbers" "first-row">
+			<button type="button" onclick="numButton(7)">7</button>
+			<button type="button" onclick="numButton(8)">8</button>
+			<button type="button" onclick="numButton(9)">9</button>
+			<button type="button" class="operator" onclick="multiply('*')">*</button>
+		</div>
+		<div class="numbers" "second-row">
+			<button type="button" onclick="numButton(4)">4</button>
+			<button type="button" onclick="numButton(5)">5</button>
+			<button type="button" onclick="numButton(6)">6</button>
+			<button type="button" class="operator" onclick="divide('/')">/</button>
+		</div>
+		<div class="numbers" "third-row">
+			<button type="button" onclick="numButton(1)">1</button>
+			<button type="button" onclick="numButton(2)">2</button>
+			<button type="button" onclick="numButton(3)">3</button>
+			<button type="button" class="operator" onclick="addition('+')">+</button>
+		</div>
+		<div class="numbers" "fourth-row">
+			<button type="button" onclick="numButton(0)">0</button>
+			<button type="button" onclick="decimalButton('.')">.</button>
+			<button type="button" onclick="calculate()">=</button>
+			<button class="operator" onclick="subtraction('-')">-</button>
+		</div>
+	</div>
+</body>
+</html>
